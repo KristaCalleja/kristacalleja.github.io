@@ -2,44 +2,30 @@
 <html>
 <head>
   <title>Krista Calleja | Web Developer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&Literata:wght@400;500;700&family=Manrope:wght@200;300;400;700;800&Montserrat:wght@500&family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=EB+Garamond:ital@1&family=Manrope:wght@200;300;400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-<!-- Insert logo on the left corner-->
-<div class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"> </a>
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a class="btn btn-ghost" href="#">Get in touch</a>
-        </span>
-    </div>
-    </nav>
+  <!-- Insert logo on the left corner-->
+  <div class="sticky-top">
+    <a href="https://github.com/KristaCalleja"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/ghajnejja/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/krista.calleja"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/krista_calleja"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/kristacalleja/"><i class="fab fa-linkedin"></i></a>
 </div>
 
 <!-- Banner Section -->
 <wrapper>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/freddie-marriage.jpg);">
-      <div class="row">
-        <div class="col-sm-12">
-      <h1>KRISTA CALLEJA</h1>
-      <h2><span class="highlight">Web developer with the drive of a legal pro.</span></h2>
-        </div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/freddie-marriage.jpg);">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>KRISTA CALLEJA</h1>
+        <h2><span class="highlight">Web developer with the drive of a legal pro.</span></h2>
       </div>
     </div>
+  </div>
 </wrapper>
 
 <!-- About Me Section -->
@@ -60,57 +46,69 @@
     </div>
   </div>
 
-<!-- Portfolio section: carousel with text on the side -->
-<section>
-  <div class="projects-container">
-      <h2>Projects</h2>
-    <div class="projects-grid">
-      <h2>Projects</h2>
+  <!-- Portfolio section: carousel with text on the side -->
+  <section>
+    <div class="projects-container">
+      <div class="row">
+        <div class="col-6">
+          <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/nuzzle.png" class="d-block w-100" alt="nuzzle">
+              </div>
+              <div class="carousel-item">
+                <img src="images/datesy.png" class="d-block w-100" alt="datesy">
+              </div>
+              <div class="carousel-item">
+                <img src="images/urin.png" class="d-block w-100" alt="urin">
+              </div>
+            </div>
+          </div>
+        <div class="col-6">
+          <h4>Lorem ipsum </h4>
+        </div>
+    </div>
+  </section>
 
-  </div>
-</section>
-  </body>
-
-<!-- Programming languages -->
-<div class="programming-languages__container">
-  <h4>Conversant in the following languages and frameworks</h4>
-<div class="flexbox">
-  <img src="images/ruby.svg" alt="">
-  <img src="images/bootstrap.svg" alt="">
-  <img src="images/javascript.svg" alt="">
-  <img src="images/html.svg" alt="">
-  <img src="images/css.svg" alt="">
-  <img src="images/python.svg" alt="">
-  <img src="images/flask.svg" alt="">
-</div>
-<!-- Reach me -->
-<div class="contact-container">
-  <div class="footer-links d-flex justify-content-start">
-    <h2>Follow me on</h2>
-    <a href="https://github.com/KristaCalleja"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/ghajnejja/"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/krista.calleja"><i class="fab fa-facebook"></i></a>
-    <a href="https://twitter.com/krista_calleja"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/kristacalleja/"><i class="fab fa-linkedin"></i></a>
-  </div>
+<!-- Reviews -->
+<div class="review-container">
+  <h5>What my colleagues say about me<h5>
+  <h6>"Thank you for your work, the Directive was extremely technical and challenging" - Argyro</h6>
+  <h6>"Thank you for you very good work." - Fanny</h6>
+  <h6>"I have no idea how you manage to be such an awesome mom, wife and professional at the same time…" - Milene</h6>
 </div>
 
-<!-- Footer section -->
-<div class="footer">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="copyright">
+        <!-- Programming languages -->
+        <div class="programming-languages__container">
+          <h4>Conversant in the following languages and frameworks</h4>
+          <div class="flexbox">
+            <img src="images/ruby.svg" alt="">
+            <img src="images/bootstrap.svg" alt="">
+            <img src="images/javascript.svg" alt="">
+            <img src="images/html.svg" alt="">
+            <img src="images/css.svg" alt="">
+            <img src="images/python.svg" alt="">
+            <img src="images/flask.svg" alt="">
+          </div>
+          <!-- Reach me -->
+
+        </body>
+        <!-- Footer section -->
+        <div class="footer">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright">
         <!-- <p><strong>Do not plagiarise my text.</strong></p>
-        <p><strong>Nao plagia meu texto.</strong></p> -->
-        <p>Copyright <i class="far fa-copyright"></i> 2020 Krista Calleja LL.B LL.M | All rights reserved.</p>
+          <p><strong>Nao plagia meu texto.</strong></p> -->
+          <p>Copyright <i class="far fa-copyright"></i> 2020 Krista Calleja LL.B LL.M | All rights reserved.</p>
+        </div>
       </div>
     </div>
+    <div class="fine-line">
+    </div>
+    <div class="final-footer">
+      <p>Launched during the COVID-19 lockdown 😷</p>
+    </div>
   </div>
-<div class="fine-line">
-  </div>
-<div class="final-footer">
-  <p>Launched during the COVID-19 lockdown 😷</p>
-</div>
-</div>
-</html>
+  </html>
 
