@@ -119,7 +119,8 @@ body h3 {
 
 .projects-container {
   display: flex;
-  margin: 20px;
+  margin: 40px;
+  background-color: #ffd0ae;
 }
 
 .programming-languages__container h4{
