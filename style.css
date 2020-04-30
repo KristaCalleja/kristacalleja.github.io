@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=EB+Garamond:ital@1&family=Manrope:wght@200;300;400;700&family=Montserrat:wght@500&display=swap');
 
-body {
-  background-color: #f4f3f2;
+* {
+  box-sizing: border-box;
 }
 
-.sticky-top {
-  background: black;
-  position: sticky;
+body {
+  background-color: #f4f3f2;
+  margin: 0;
+}
+
+main {
+  margin-left: 20px;
+}
+
+.nav {
+  background: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav a {
+  width: 70%;
 }
 
 .banner {
