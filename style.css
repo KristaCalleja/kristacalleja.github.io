@@ -65,24 +65,6 @@ body h3 {
   font-family: 'Manrope', sans-serif;
 }
 
-.btn {
-  font-style: bold;
-  font-color: #374785;
-  padding: 8px 24px;
-  border-width: medium;
-  border-radius: 4px;
-  border-color: #374785;
-  transition: background 0.3s ease;
-  text-align: center;
-  background-color: transparent;
-  line-height: 1.5;
-}
-
-/*.btn-flat:hover {
-  color: #0077b5 !important;
-  background: #F7F7FF;
-  border-color: #0077b5;
-}*/
 
 .profile-picture {
   height: auto;
@@ -105,6 +87,35 @@ body h3 {
   border-radius: 5px;
 }
 
+.btn {
+  font-style: bold;
+  font-color: #374785;
+  padding: 8px 24px;
+  border-width: medium;
+  border-radius: 4px;
+  border-color: #374785;
+  transition: background 0.3s ease;
+  text-align: center;
+  background-color: transparent;
+  line-height: 1.5;
+}
+
+/*.btn-flat:hover {
+  color: #0077b5 !important;
+  background: #F7F7FF;
+  border-color: #0077b5;
+}*/
+
+.carousel-item > .item > img {
+  width: 480px;
+  height: 520px;
+}
+
+.review-container {
+  height: 300px;
+  padding-top: 70px;
+}
+
 .review-container h5{
   text-align: center;
   font-family: 'Amiri', serif;
@@ -122,8 +133,14 @@ body h3 {
 
 .projects-container {
   display: flex;
-  margin: 40px;
   background-color: #ffd0ae;
+  align-items: center;
+  align-content: center;
+  padding: 60px;
+}
+
+.projects-container h4 {
+  align-content: center;
 }
 
 .programming-languages__container h4{
@@ -148,7 +165,6 @@ body h3 {
   height: 120px;
 }
 
-
 .copyright {
   background-color: #343a40;
   align-content: center;
@@ -160,8 +176,8 @@ body h3 {
 
 .final-footer {
   background: #BFC0C0;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .final-footer p {
