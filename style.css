@@ -54,12 +54,16 @@ body {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
 }
 
-.container {
+.about-container {
   display: flex;
   align-content: center;
   background-color: #f4f3f2;
-  padding: 100px;
-  width: initial;
+  padding: 70px;
+}
+
+.about-container img {
+  width: 90%;
+  height: 100%;
 }
 
 body h3 {
@@ -73,28 +77,6 @@ body h3 {
   font-weight: 400;
   line-height: 1.875;
   font-family: 'Manrope', sans-serif;
-}
-
-
-.profile-picture {
-  height: auto;
-  width: 100%;
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
-  z-index: 2;
-  border-radius: 3px;
-}
-
-.profile-texture {
-  width: 485px;
-  height: 380px;
-  position: absolute;
-  top: 10px;
-  left: 47px;
-  z-index: 1;
-  border-radius: 5px;
 }
 
 .btn {
@@ -111,16 +93,35 @@ body h3 {
   box-shadow: 0 5px 8px rgba(0,0,0,.15);
 }
 
-/*.btn-flat:hover {
-  color: #0077b5 !important;
-  background: #F7F7FF;
-  border-color: #0077b5;
-}*/
-
 .carousel-item > .item > img {
   width: 480px;
   height: 520px;
 }
+
+.bootcamp-container {
+  display: flex;
+  background-color: #f4f3f2;
+  align-items: center;
+  align-content: center;
+  padding: 30px;
+}
+
+.bootcamp-container img {
+  width: auto;
+  height: 400px;
+}
+
+.bootcamp-text {
+  background-color: #f4f3f2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.875;
+  font-family: 'Manrope', sans-serif;
+  color: #626262;
+  text-align: left;
+  padding: 40px;
+}
+
 
 .review-container {
   height: 300px;
@@ -145,7 +146,7 @@ body h3 {
 .projects-container {
   display: flex;
   background-color: #ffd0ae;
-  align-items: center;
+  align-items: space-between;
   align-content: center;
   padding: 60px;
   text-align: left;
