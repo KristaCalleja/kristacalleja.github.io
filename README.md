@@ -1,4 +1,5 @@
-Not optimised for mobile. 
+🚧UNDER CONSTRUCTION🚧
+⚠️Not optimised for mobile.⚠️
 
 Check out my page, and:
 
@@ -7,8 +8,6 @@ Check out my page, and:
 ◦ consider the programming languages I know<br/>
 ◦ read friendly reviews.
 
-Constructive criticisms are welcome! Please get in touch. 
-
-Coming soon: trivia and much more!
+Constructive criticisms are welcome! Please get in touch.📲
 
 Visit my page at https://kristacalleja.github.io/ 
