@@ -16,13 +16,10 @@ main {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/freddie-marriage.jpg");
-  height: 680px;
-  background-position: bottom right;
-  background-size: cover;
-  padding: 150px 0;
+  background-color: #aeaeb1;
+  height: 240px;
+  padding: 50px 0;
   position: relative;
-  background-repeat: no-repeat;
 }
 
 .banner-inner {
