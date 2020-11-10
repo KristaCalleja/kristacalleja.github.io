@@ -7,10 +7,6 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
-h1, h3, p {
-  font-family: 'Manrope', sans-serif;
-}
-
 h2 {
   font-family: Amiri, serif;
 }
@@ -20,15 +16,24 @@ h2 {
 }
 
 .navbar {
+  overflow: visible;
   background-color: #CDE7BE;
   height: 12vh;
   position: sticky;
   display: flex;
-  box-shadow: 1 1 0px rgba(0,0,0,0.7);;
+  box-shadow: 0 0 9px rgba(0,0,1);
+  padding: 80px 50px;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+.navbar-collapse a:hover {
+  text-decoration: dotted;
+  font-weight: 700;
 }
 
 .banner {
@@ -60,18 +65,25 @@ h2 {
 
 /* About */
 .about {
-  /* border: black 2px solid; */
+  height: 600px;
   display: flex;
-  height: 500px;
   align-items: center;  
+  padding: 68px 0;
+}
+
+.text-box {
+  padding: 40px 50px;
+  width: 50%;
+  margin-left: 20px;
 }
 
 .about img {
+  overflow: hidden;
   height: 100%;
-  width: 600px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/profile.jpg);
   object-fit: cover;
   border-radius: 4px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 8px 6px 15px -5px rgba(0,0,0,0.64);
 }
 
 
@@ -81,12 +93,10 @@ h2 {
 } */
 
 .cards {
-  /* border: blue 2px solid; */
   max-width: 1280px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-  /* flex-direction: row; */
+  grid-gap: 33px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -100,6 +110,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: -3px 2px 9px -3px rgba(0,0,0,0.82);
 }
 
 .programming-languages__container h4{
@@ -125,7 +136,7 @@ h2 {
 
 .footer {
   background-color: #212529;
-  /* padding: 40px; */
+  padding: 120px 40px;
   display: flex;
   flex-wrap: wrap;
 }
