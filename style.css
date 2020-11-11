@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&Amiri:wght@700&family=Manrope:wght@200;300;400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -15,14 +18,16 @@ h2 {
   max-width: 1240px;
 }
 
+/* Navigation bar */
+
 .navbar {
   overflow: visible;
   background-color: #CDE7BE;
-  height: 12vh;
+  height: 100px;
+  padding: 0 48px;
   position: sticky;
   display: flex;
   box-shadow: 0 0 9px rgba(0,0,1);
-  padding: 80px 50px;
   font-weight: 400;
   font-size: 24px;
 }
@@ -36,16 +41,18 @@ h2 {
 }
 
 .navbar-collapse a:hover {
-  text-decoration: dotted;
   font-weight: 700;
 }
 
+/* Hero image */
+
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/jana-sabeth-malta-wave.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(images/jana-sabeth-malta-wave.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding: 260px 0;
-  height: 90vh;
+  min-height: 500px;
   color: white;
 }
 
@@ -53,15 +60,12 @@ h2 {
   font-weight: 700;
   font-size: 40;
   line-height: 2.4em;
-}
-
-.highlight {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 /* Quotation */
 .quotation {
-  /* border: black 3px solid; */
   height: 580px;
   padding: 150px 0;
   background-color: #FB9F89;
@@ -69,6 +73,7 @@ h2 {
 
 /* About */
 .about {
+  border: black 3px solid;
   height: 600px;
   display: flex;
   align-items: center;  
@@ -76,12 +81,14 @@ h2 {
 }
 
 .text-box {
+  border: black 3px solid;
   padding: 40px 50px;
   width: 50%;
   margin-left: 20px;
 }
 
 .about img {
+  border: black 3px solid;
   overflow: hidden;
   height: 100%;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/profile.jpg);
@@ -90,31 +97,47 @@ h2 {
   box-shadow: 8px 6px 15px -5px rgba(0,0,0,0.64);
 }
 
-
+/* Portfolio */
 .portfolio { 
-  border: red 3px solid;
   background-color: #8896AB;
-  padding: 20px;
+  padding: 60px 20px 50px 20px;
+  border-radius: 4px;
 } 
-
 .cards {
-  border: black 2px solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 33px;
   align-items: flex-start;
   justify-content: space-between;
 }
-
 .card {
-  border: #CDE7BE 1px solid;
+  border: #CDE7BE 3px solid;
+  background-color: #f4f3f2;
   padding: 30px;
+  height: 720px;
+  justify-content: flex-start;
+}
+
+.title h3 {
+  font-weight: 700;
+}
+
+.tags {
+  color: #4B644A;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.description-box {
+  margin: 10px;
+  height: 240px;
 }
 
 .card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 310px;
+  object-fit: fill;
+  margin: 15px 0;
   box-shadow: -3px 2px 9px -3px rgba(0,0,0,0.82);
 }
 
@@ -144,26 +167,23 @@ h2 {
   padding: 120px 40px;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
-.footer h2{
-  font-size: 40px;
+.footer h2, h3 {
+  font-size: 24px;
   color: white;
 }
 
-.footer-links {
+.footer h3{
   display: flex;
   align-items: center;
   /* padding: 25px; */
   /* margin: 1; */
 }
 
-.footer-links p {
-  color: white;
-  font-size: 15px;
-}
 
-.footer-links a {
+.footer a {
   color: white;
   opacity: 0.15;
   font-size: 35px;
