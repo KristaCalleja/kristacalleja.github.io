@@ -123,8 +123,9 @@ h2 {
 
 .card img {
   width: 100%;
+  background-size: cover;
   height: 310px;
-  object-fit: fill;
+  /* object-fit: fill; */
   margin: 15px 0;
   box-shadow: -3px 2px 9px -3px rgba(0,0,0,0.82);
 }
