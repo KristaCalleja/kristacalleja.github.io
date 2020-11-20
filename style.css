@@ -62,11 +62,10 @@ h2{
 
 /* About */
 .about {
-  padding: 80px 20px;
-  max-height: 580px;
-  align-items: center; 
   display: grid; 
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  min-height: 620px;
+  align-items: center; 
 }
 .about p{
   margin: auto 40px;
@@ -182,52 +181,16 @@ h2{
 
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px){
-  /* .navbar-collapse {
-    visibility: hidden;
-  }
-  .banner {
-    background-size: 700px 820px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-  }
-  .banner h1 {
-    font-size: 16px;
-    line-height: 1em;
-  }
-  .quotation h2 {
-    font-size: 24px;
-  }
-  .about {
-    flex-direction: column;
-    height: 840px;
-  }
-  .text-box {
-    width: 100%;
-  }
-  .about img {
-    width: 100%;
-    height: 320px;
-    overflow: visible;
-  }
-  .cards {
+  .about{
     grid-template-columns: 1fr;
   }
-  .card {
-    height: 920px;
+  .portfolio .cards{
+    grid-template-columns: 1fr;
   }
-  .flexbox img {
-    height: 32px;
-  }
-  .footer a {
-    font-size: 16px;
-  } */
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
