@@ -1,25 +1,25 @@
-html {
+html{
   scroll-behavior: smooth;
 }
-
-body {
-  margin: 0px;
+*{
+  margin: 0 auto;
   padding: 0px;
-  background-color: #f4f3f2; 
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
-h2 {
+body{
+  background-color: #f4f3f2; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.4em;
+}
+h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/* .wrapper {
-  max-width: 1240px;
-} */
-
+.wrapper{
+  width: 90%;
+  max-width: 1200px;
+}
 /* Navigation bar */
 .navbar {
+  border: 2px orange solid;
   overflow: visible;
   background-color: #CDE7BE;
   height: 100px;
@@ -31,56 +31,52 @@ h2 {
   font-size: 24px;
 }
 .navbar-collapse {
+
+  border: 2px orange solid;
   justify-content: flex-end;
 }
 .navbar-collapse a:hover {
   font-weight: 700;
 }
-
+.navbar-brand{
+  border: 2px orange solid;
+}
 /* Hero image */
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(images/jana-sabeth-malta-wave.jpg);
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
-  padding: 260px 0;
-  min-height: 500px;
+  padding: 270px 70px;
   color: white;
 }
-.banner h1{
-  font-weight: 700;
-  font-size: 40;
+.banner h1, h3{
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.2);
   line-height: 2.4em;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 /* Quotation */
 .quotation {
-  height: 580px;
-  padding: 150px 0;
+  padding: 270px 70px;
   background-color: #FB9F89;
 }
 
 /* About */
 .about {
-  height: 600px;
-  display: flex;
-  align-items: center;  
-  padding: 68px 0;
+  padding: 80px 20px;
+  max-height: 580px;
+  align-items: center; 
+  display: grid; 
+  grid-template-columns: 50% 50%;
 }
-
-.text-box {
-  padding: 40px 50px;
-  width: 50%;
-  margin-left: 20px;
+.about p{
+  margin: auto 40px;
+  line-height: 1.8rem;  
 }
-
 .about img {
-  overflow: hidden;
-  height: 100%;
+  background-size: cover;
+  width: 100%;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/profile.jpg);
-  object-fit: cover;
   border-radius: 4px;
   box-shadow: 8px 6px 15px -5px rgba(0,0,0,0.64);
 }
@@ -196,7 +192,7 @@ h2 {
 
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px){
-  .navbar-collapse {
+  /* .navbar-collapse {
     visibility: hidden;
   }
   .banner {
@@ -234,7 +230,7 @@ h2 {
   }
   .footer a {
     font-size: 16px;
-  }
+  } */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -246,7 +242,7 @@ h2 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .wrapper {
+  /* .wrapper {
     max-width: 1500px;
-  }
+  } */
 }
