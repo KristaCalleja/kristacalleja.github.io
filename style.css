@@ -1,9 +1,9 @@
-html{
-  scroll-behavior: smooth;
-}
 *{
   margin: 0 auto;
   padding: 0px;
+}
+html{
+  scroll-behavior: smooth;
 }
 body{
   background-color: #f4f3f2; 
@@ -27,7 +27,6 @@ h2{
   position: sticky;
   display: flex;
   box-shadow: 0 0 9px rgba(0,0,1);
-  font-weight: 400;
   font-size: 24px;
 }
 .navbar-collapse {
@@ -40,6 +39,8 @@ h2{
 .navbar-brand{
   border: 2px orange solid;
 }
+
+
 /* Hero image */
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(images/jana-sabeth-malta-wave.jpg);
@@ -64,6 +65,7 @@ h2{
 .about {
   display: grid; 
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
   min-height: 620px;
   align-items: center; 
 }
@@ -84,34 +86,22 @@ h2{
   /* border: 2px black solid; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 2em;
 }
 .card {
   border: #CDE7BE 3px solid;
   padding: 30px;
 }
-
-.title h3 {
+.card h3 {
   font-weight: 700;
 }
-
-.tags {
+.tags p{
   color: #4B644A;
   font-weight: 700;
-  padding-bottom: 5px;
 }
-
-.description-box {
-  margin: 10px;
-}
-
 .card img {
   width: 100%;
   background-size: cover;
-  height: 310px;
-  /* object-fit: fill; */
-  margin: 15px 0;
   box-shadow: -3px 2px 9px -3px rgba(0,0,0,0.82);
 }
 
@@ -163,7 +153,6 @@ h2{
   text-align: center;
   color: white;
   padding: 15px;
-  line-height: 1rem;
 }
 
 .final-footer {
@@ -185,14 +174,9 @@ h2{
     grid-template-columns: 1fr;
   }
   .portfolio .cards{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;    
   }
 }
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) {
-}
-
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* .wrapper {
