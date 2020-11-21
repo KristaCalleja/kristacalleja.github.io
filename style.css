@@ -76,7 +76,6 @@ h2{
 .about img {
   background-size: cover;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/profile.jpg);
   border-radius: 4px;
   box-shadow: 8px 6px 15px -5px rgba(0,0,0,0.64);
 }
