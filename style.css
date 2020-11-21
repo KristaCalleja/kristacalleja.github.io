@@ -125,39 +125,12 @@ h2{
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  line-height: 3em;
 }
 .footer a {
   font-size: 24px;
   color: black;
 }
-
-.contact-card {
-  letter-spacing: 1em;
-  font-size: 1.5em;
-  padding-top: 15px;
-}
-
-.copyright {
-  background-color: #343a40;
-  align-content: center;
-  text-align: center;
-  color: white;
-  padding: 15px;
-}
-
-.final-footer {
-  background: #BFC0C0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.final-footer p {
-  float: right;
-  font-size: 10px;
-  color: #384D48;
-}
-
 
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px){
