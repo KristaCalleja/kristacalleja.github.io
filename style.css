@@ -43,7 +43,7 @@ h2{
 
 /* Hero image */
 .banner {
-  background-image: linear-gradient(rgba(1,1,1,0.1),rgba(1,1,1,0.3)), url(images/jana-sabeth-malta-wave.jpg);
+  background-image: linear-gradient(rgba(1,1,1,0.1),rgba(1,1,1,0.3)), url(images/jana-sabeth-malta-wave.webp);
   background-size: cover;
   background-attachment: fixed;
   padding: 270px 70px;
