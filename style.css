@@ -28,7 +28,8 @@ nav{
   box-shadow: 0 0 9px rgba(0,0,1);
 }
 label.logo {
-  color: white;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  color: black;
   font-size: 1.8em;
   line-height: 80px;
   font-weight: 700;
@@ -45,7 +46,8 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: white;
+  color: black;
+  /* color: white; */
 }
 a.active,a:hover{
   font-weight: 900;
