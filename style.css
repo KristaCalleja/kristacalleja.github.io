@@ -1,6 +1,9 @@
 *{
   margin: 0 auto;
   padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 html{
   scroll-behavior: smooth;
@@ -18,29 +21,36 @@ h2{
   max-width: 1200px;
 }
 /* Navigation bar */
-.navbar {
-  border: 2px orange solid;
-  overflow: visible;
+nav{
   background-color: #CDE7BE;
   height: 100px;
-  padding: 0 48px;
-  position: sticky;
-  display: flex;
-  box-shadow: 0 0 9px rgba(0,0,1);
   font-size: 24px;
+  box-shadow: 0 0 9px rgba(0,0,1);
 }
-.navbar-collapse {
-  border: 2px orange solid;
-  justify-content: flex-end;
-}
-.navbar-collapse a:hover {
+label.logo {
+  color: white;
+  font-size: 1.8em;
+  line-height: 80px;
   font-weight: 700;
+  margin: 0 30px;
+  cursor: pointer;
 }
-.navbar-brand{
-  border: 2px orange solid;
+nav ul{
+  float: right;
+  margin-right: 40px;
 }
-
-
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+}
+a.active,a:hover{
+  font-weight: 900;
+  cursor: pointer;
+}
 /* Hero image */
 .banner {
   background-image: linear-gradient(rgba(1,1,1,0.1),rgba(1,1,1,0.3)), url(images/jana-sabeth-malta-wave.webp);
@@ -135,6 +145,12 @@ h2{
 
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px){
+  label.logo {
+    font-size: 1.2em;
+  }
+  nav ul{
+    display: none;
+  }
   .about{
     grid-template-columns: 1fr;
   }
