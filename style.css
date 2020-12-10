@@ -97,6 +97,7 @@ nav ul li a{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
+  text-align: center;
 }
 .cards img {
   width: 90%;
@@ -107,6 +108,25 @@ nav ul li a{
 .card {
   border: #CDE7BE 3px solid;
   padding: 2em;
+  text-align: left;
+}
+button{
+  background-color: white;
+  font-size: 18px;
+  color: black;
+  border: 2px solid #CDE7BE; 
+  padding: 8px 24px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  margin: auto;
+}
+button:hover {
+  background-color: rgb(151, 194, 127); /* Green */
+  color: white;
+  font-weight: 700;
+}
+.unavailable{
+  cursor: not-allowed;
 }
 
 /* Programming languages */
