@@ -97,6 +97,8 @@ nav ul li a{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
+}
+.cards:nth-child(n+6){
   text-align: center;
 }
 .cards img {
@@ -106,11 +108,13 @@ nav ul li a{
   margin: 20px;
 }
 .card {
+  position: relative;
   border: #CDE7BE 3px solid;
   padding: 2em;
-  text-align: left;
 }
 button{
+  position: absolute;
+  right: 40%;
   background-color: white;
   font-size: 18px;
   color: black;
@@ -118,7 +122,6 @@ button{
   padding: 8px 24px;
   border-radius: 50px;
   transition-duration: 0.4s;
-  margin: auto;
 }
 button:hover {
   background-color: rgb(151, 194, 127); /* Green */
