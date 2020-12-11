@@ -97,9 +97,7 @@ nav ul li a{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
-}
-.cards:nth-child(n+6){
-  text-align: center;
+  grid-auto-rows: minmax(600px, auto);
 }
 .cards img {
   width: 90%;
@@ -113,8 +111,6 @@ nav ul li a{
   padding: 2em;
 }
 button{
-  position: absolute;
-  right: 50%;
   background-color: white;
   font-size: 18px;
   color: black;
