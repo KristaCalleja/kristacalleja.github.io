@@ -110,6 +110,9 @@ nav ul li a{
   border: #CDE7BE 3px solid;
   padding: 2em;
 }
+.card span{
+  color: #FB9F89;
+}
 button{
   background-color: white;
   font-size: 18px;
@@ -120,7 +123,7 @@ button{
   transition-duration: 0.4s;
 }
 button:hover {
-  background-color: rgb(151, 194, 127); /* Green */
+  background-color: rgb(151, 194, 127);
   color: white;
   font-weight: 700;
 }
