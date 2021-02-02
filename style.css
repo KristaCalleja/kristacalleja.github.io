@@ -17,8 +17,8 @@ h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .wrapper{
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1500px;
 }
 /* Navigation bar */
 nav{
@@ -29,7 +29,7 @@ nav{
 }
 nav img{
   /* border: 1px black solid; */
-  padding: 10px;
+  padding: 0px 40px;
 }
 
 nav ul{
@@ -56,6 +56,7 @@ nav ul li a{
   background-attachment: fixed;
   padding: 270px 70px;
   color: white;
+  height: 80vh;
 }
 .banner h1{
   text-shadow: 0px 0px 3px rgba(0,0,0,0.2);
@@ -65,8 +66,11 @@ nav ul li a{
 
 /* Quotation */
 .quotation {
-  padding: 270px 50px;
+  text-align: center;
+  padding: 320px 0;
   background-color: #FB9F89;
+  height: 90vh;
+  line-height: 2.3em;
 }
 
 /* About */
@@ -90,6 +94,7 @@ nav ul li a{
 
 /* Portfolio */
 .cards {
+  padding: 0 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
@@ -121,10 +126,10 @@ button{
 button:hover {
   background-color: rgb(151, 194, 127);
   color: white;
-  font-weight: 700;
+  cursor: pointer;
 }
 .unavailable{
-  cursor: not-allowed;
+  cursor: not-allowed; !important;
 }
 
 /* Programming languages */
@@ -164,7 +169,7 @@ button:hover {
 }
 
 /* Smallest device */
-@media (min-width: 100px) and (max-width: 575px){
+@media (min-width: 100px) and (max-width: 675px){
   label.logo {
     font-size: 1.2em;
   }
