@@ -23,26 +23,22 @@ h2{
 /* Navigation bar */
 nav{
   background-color: #CDE7BE;
-  height: 100px;
+  height: 120px;
   font-size: 24px;
   box-shadow: 0 0 9px rgba(0,0,1);
 }
-label.logo {
-  font-family: Arial, Helvetica, sans-serif, sans-serif;
-  color: black;
-  font-size: 1.8em;
-  line-height: 80px;
-  font-weight: 700;
-  margin: 0 30px;
-  cursor: pointer;
+nav img{
+  /* border: 1px black solid; */
+  padding: 10px;
 }
+
 nav ul{
   float: right;
   margin-right: 40px;
 }
 nav ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 120px;
   margin: 0 5px;
 }
 nav ul li a{
