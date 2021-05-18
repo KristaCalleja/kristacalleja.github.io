@@ -29,242 +29,56 @@
   <meta property="og:image" content="https://media-exp1.licdn.com/dms/image/C4D03AQFUgx8T3-0edQ/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=vXiWgYR2sEB3E_HewL6goJbRG5ki4ZrlSnwd81oYe5Y">
   <meta property="og:description" content="Lawyer with web dev skills.">
   <meta property="og:site_name" content="kristacalleja.github.io"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-<div class="wrapper">
-<!-- Navbar Section -->
-<nav>
-    <img src="images/kristacallejalogo.png" alt="">
-  <ul>
-    <li>
-      <a class="active" href="#home">Home</a>
-    </li>
-    <li>
-      <a href="#about">About</a>
-    </li>
-    <li>
-      <a href="#portfolio">Portfolio</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
+    <div class="wrapper">
+    <div class="section">
+      <div class="img"></div>
+      <div>
+        <h1>Hi, I'm Krista <br> I'm a full-stack developer</h1>
+        <p>I grew up by the rocky coast of Malta, where I pursued a career as a government lawyer combatting illegal fisheries. In the past years, the urge to switch contexts and dive further into the tech world grew stronger. I love the creative process and the purposeful tasks programming entails. Nowadays, alongside my legal work, I keep my tech skills up to scratch freelancing.</p>
+      </div>    
+    </div>
+    <div class="main">
+      <h2>Key Projects</h2>
+        <a href="full-stack-apps.html">Ruby on Rails Apps</a>
+        <a href="ux-ui-components.html">UX UI Components and JS Apps</a>
+        <a href="websites.html">Client websites</a>
+        <!-- <a href="#">React.js projects</a> -->
+    </div>
+    <div class="footer" id="contact">
+      <h2>Have a question, idea or want to work together?</h2>
+      <div>
+        <a href="mailto:krista.developer@gmail.com">krista.developer@gmail.com</a> <br>
+        <a href="https://github.com/KristaCalleja" target="_blank" rel="noreferrer" title="Github">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://stackexchange.com/users/14684452/metronome" target="_blank" rel="noreferrer" title="Stackoverflow">
+          <ion-icon name="logo-stackoverflow"></ion-icon>
+        </a>
+        <a href="https://lewagon.slack.com/team/UPCSE099B" target="_blank" rel="noreferrer" title="Slack">
+          <ion-icon name="logo-slack"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/kristacalleja/" target="_blank" rel="noreferrer" title="LinkedIn">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.goodreads.com/user/show/9676019-krista-calleja" target="_blank" rel="noreferrer" title="Goodreads">
+          <ion-icon name="goodreads"></ion-icon>
+        </a>
+        <a href="https://twitter.com/krista_calleja" target="_blank" rel="noreferrer" title="Goodreads">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </div>
+    </div>
 
-<!-- Hero image -->
-<div class="banner" id="home">
-    <h1>Building <i>Your</i>  Online Presence</h1>
-    <h3>design ∘ code ∘ produce</h3>
-</div>
-
-<!-- Inspiration box -->
-<div class="quotation">
-  <h2>⟪The Muse visits during the process of creation, not before.⟫</h2>
-  <p>Robert Ebert</p>
-</div>
-
-<!-- About Section -->
-<div class="about" id="about">
-  <div>
-    <p>Hi, I'm Krista! <br><br>I grew up by the rocky coast of Malta, where I pursued a legal career combatting illegal fisheries. In the past years, the urge to switch contexts and dive further into the tech world grew stronger. I love the creative process and the purposeful tasks programming entails.<br><br>Nowadays, alongside my legal work, I keep my tech skills up to scratch freelancing.</p>
   </div>
-  <picture>
-    <source type="image/webp" srcset="images/profile.webp">
-    <img src="images/profile.jpg" alt="profile picture">
-  </picture>
-</div>
-
-<!-- Portfolio grid -->
-<div class="cards" id="portfolio">
-  <div class="card">
-    <h3>Landing Page Mockup<span> NEW! </span></h3>
-    <p>HTML5 / CSS3</p>
-    <picture>
-      <source type="images/webp" srcset="images/MOCKUP.webp">
-      <img src="images/MOCKUP.png" alt="">
-    </picture>
-    <p>A standard landing page for your personal or business purposes, coded from scratch using pure HTML and CSS. Responsive. Showcases all elements, combinations, pseudo elements and pseudo classes which is the power of CSS.</p>
-    <a href="https://kristacalleja.github.io/curved-landing-page/">
-      <button>
-        Visit site
-      </button>
-    </a>
-  </div>
-  <div class="card">
-    <h3>Experimental Poetry</h3>
-    <p>HTML / CSS / CSS ANIMATION </p>
-    <picture>
-      <source type="images/webp" srcset="images/PAPO-BATE.webp">
-        <img src="images/PAPO-BATE.png" alt="falling letters">
-      </picture>
-      <p>A random acquaintance with an artist inspired me to experiment with the science and creativity which is CSS animations and transformations. These works draw on playful moods and childlike fantasy. The poems and designs are all works credited to my client. Language: BR-PT.</p>
-      <a href="https://kristacalleja.github.io/lylla-fire/">
-        <button>
-          Visit site
-        </button>
-      </a>
-    </div>
-    <div class="card">
-      <h3>Interact with your Butler</h3>
-      <p>RUBY-ON-RAILS / RUBY / SCSS</p>
-      <picture>
-        <source type="images/webp" srcset="images/carson.webp">
-        <img src="images/carson.png" alt="falling letters">
-      </picture>
-      <p>This is a simple ROR application, where user interacts with the inimitable Butler Carson (hello Downton Abbey fans!).</p>
-      <a href="https://disapproving-carson.herokuapp.com/">
-        <button>
-          Visit site
-        </button>
-      </a>
-    </div>
-    <div class="card">
-      <h3>Artist's Portfolio</h3>
-      <p>DESIGN / FRONT-END / jQUERY / JAVASCRIPT LIBRARIES / WEB-HOSTING </p>
-      <picture>
-        <source type="images/webp" srcset="images/aer.webp">
-        <img src="images/aer.png" alt="art gallery">
-      </picture>
-      <p>It's a pleasure for me to collaborate with artists: their work alone is a great source of inspiration. In this case, my client was seeking to overhaul a one-size-fits-all site-building platform, and substitute with a site that is more intuitive and appealing. Client's artwork took centerstage, of course; nonetheless, I used features which brought the client's story to the fore.</p>
-      <a href="https://www.amyeliseroberts.com/">
-        <button>
-          Visit site
-        </button>
-      </a>
-    </div>
-  <div class="card">
-    <h3>Josef Kalleya's Quotes</h3>
-    <p>WEB APP RANDOM GENERATOR / ROR / HEROKU </p>
-    <picture>
-      <source type="image/webp" srcset="images/josefkalleya.webp">
-      <img src="images/josefkalleya.png" alt="Josef Kalleya web app">
-    </picture>
-    <p>Josef Kalleya is an acclaimed a modern artist, born in Valletta, Malta in 1898. Apart from his striking sculptures and drawings, Kalleya's artistic value is also noted in his elocution. This generator attempts to cataloguise some of his most common musings. Developing this app was highly rewarding: Kalleya is my late grandfather.</p>
-    <a href="http://josefkalleya-quotes.herokuapp.com/">
-      <button>
-        Visit site
-      </button>
-    </a>
-  </div>
-    <!-- Card 1 -->
-    <div class="card">
-      <h3>Datesy</h3>
-      <p>PRODUCT DEVELOPMENT / UX / UI / FULL-STACK DESIGN / ROR / SCSS</p>
-      <picture>
-        <source type="image/webp" srcset="images/datesy.webp">
-        <img src="images/datesy.png" alt="Datesy website">
-      </picture>
-      <p>If you're tired of looking for love, let Datesy do it for you. This app is the brainchild of a cohort of mine at the programming bootcamp. We teamed up and designed this mobile version from its very most basic features: user journey, database relationships, palettes, etc. It well received by the audience on presentation day.</p>
-      <a href="https://datesy.app/">
-        <button class="btn">
-          Visit site
-        </button>
-      </a>
-    </div>
-    <!-- Card 2 -->
-    <div class="card">
-      <h3>A Ponte</h3>
-      <p>USER JOURNEY / WIREFRAMING / UX / UI / FRONT-END / BACK-END / ROR / SCSS</p>
-      <picture>
-        <source type="image/webp" srcset="images/a_ponte.webp">
-        <img src="images/a_ponte.png" alt="A Ponte website">
-      </picture>
-      <p>A Ponte is the legal student's pocket companion. For this project I paired with a legal colleague and together we devised a platform tailored to young law students located in remote regions of LATAM. A Ponte connects them with the best sources of modern jurisprudence. With a good dose of sleek front-end design and intelligent gems on the back-end, this platform is oozing with potential.</p>
-      <a href="#">
-        <button class="unavailable">
-          Coming Soon
-        </button>
-      </a>
-    </div>
-    <!-- Card 3 -->
-    <div class="card">
-      <h3>Nuzzle</h3>
-      <p>PRODUCT DEVELOPMENT / UX / UI / FRONT-END / BACK-END / ROR / SCSS</p>
-      <picture>
-        <source type="images/webp" srcset="images/nuzzle.webp">
-        <img src="images/nuzzle.png" alt="Nuzzle website">
-      </picture>
-      <p>Nuzzle is a web app which connects you to your next best four-legged friends. It is a marketplace application, and it uses the four main features of a CRUD app: creating, reading, updating and deleting records. Baw-waw!</p>
-      <a href="https://nuzzle-luiscarvalhofrade.herokuapp.com/">
-        <button>
-          Visit site
-        </button>
-      </a>
-    </div>
-    <!-- Card 4 -->
-    <!-- Card 5 -->
-    <div class="card">
-      <h3>Base Apparel</h3>
-      <p>HTML5 / CSS / BOOTSTRAP / JAVASCRIPT / REGEX </p>
-      <picture>
-        <source type="images/webp" srcset="images/module_1.webp">
-        <img src="images/module_1.png" alt="Trial website">
-      </picture>
-      <p>A catalogue of modern, simple, well-designed web page modules. This is where I flex my front-end muscels. Add a little kick from JavaScript and we're in for some awesome design and functionalities!</p>
-      <a href="https://github.com/KristaCalleja/coming_soon_layout">
-        <button>
-          Read code
-        </button>
-      </a>
-    </div>
-    <!-- Card 6 -->
-    <div class="card">
-      <h3>Istituto Urca</h3>
-      <p>USER JOURNEY / WIRE-FRAMING / FRONT-END / HTML5 / CSS</p>
-      <picture>
-        <source type="images/webp" srcset="images/urin.webp">
-        <img src="images/urin.png" alt="Urca website">
-      </picture>
-      <p>This is a volunteer project for a local NGO working for environmental and social causes in the metropolitan area of the city of Rio. The team was looking to connect with the elderly in the neighbourhood, by recording their stories. An important element for this project was writing code with accessibility in mind.</p>
-      <a href="#">
-        <button class="unavailable">
-          Coming Soon
-        </button>
-      </a>
-    </div>
-  </div>
-
-  <!-- Programming languages -->
-  <div class="programming-languages">
-    <h4>Conversant in the following languages and frameworks</h4>
-    <div class="flexbox">
-      <img src="images/ruby.svg" alt="ruby" title="Ruby">
-      <img src="images/bootstrap.svg" alt="bootstrap" title="Bootstrap">
-      <img src="images/javascript.svg" alt="javascript" title="Javascript">
-      <img src="images/html.svg" alt="HTML" title="HTML5">
-      <img src="images/css.svg" alt="CSS3" title="CSS 3">
-    </div>
-  </div>
-</body>
-
-<!-- Footer section -->
-<div class="footer" id="contact">
-  <h2>Have a question, idea or want to work together?</h2>
-  <div>
-    <a href="mailto:krista.developer@gmail.com">krista.developer@gmail.com</a> <br>
-    <a href="https://github.com/KristaCalleja" target="_blank" rel="noreferrer" title="Github">
-      <img src="images/github.svg" alt="Github">
-    </a>
-    <a href="https://stackexchange.com/users/14684452/metronome" target="_blank" rel="noreferrer" title="Stackoverflow">
-      <img src="images/logo-stackoverflow.svg" alt="stackexchange">
-    </a>
-    <a href="https://lewagon.slack.com/team/UPCSE099B" target="_blank" rel="noreferrer" title="Slack">
-      <img src="images/slack.svg" alt="Slack">
-    </a>
-    <a href="https://www.linkedin.com/in/kristacalleja/" target="_blank" rel="noreferrer" title="LinkedIn">
-      <img src="images/linkedin.svg" alt="LinkedIn">
-    </a>
-    <a href="https://www.goodreads.com/user/show/9676019-krista-calleja" target="_blank" rel="noreferrer" title="Goodreads">
-      <img src="images/iconfinder_149_Goodreads_logo_logos_4373720.svg" alt="">
-    </a>
-  </div>
-</div>
-</div>
-
+      <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
 

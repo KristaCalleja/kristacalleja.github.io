@@ -1,0 +1,81 @@
+:root{
+    --cultured: #dbe5e6;
+    --army-green: #46540c;
+    --laurel-green: #ABB78F;
+    --beige: #fafafa;
+    --bran-red: #cb3c3b;
+    --rich-black: #121217;
+}
+a{
+    text-decoration: none;
+    color: var(--rich-black);
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    background-color: var(--beige);
+    color: var(--rich-black);
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* First Section */
+h1:only-of-type{
+    font-size: 28px;
+    line-height: 2em;
+}
+.section{
+    border: 1px gray dotted;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.img{
+    background-image: url(images/IMG_6687.jpg);
+    background-size: 424px 382px;
+    background-repeat: no-repeat;
+}
+div:nth-child(2n){
+    padding: 1em;
+}
+/* Projects section */
+h2{
+    color: var(--bran-red);
+    text-align: center;
+}
+.main{
+    border: 1px gray dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main a{
+    border: 1px var(--bran-red) double;
+    background: ;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    margin: .7em;
+    padding: 1em 2em;
+}
+ion-icon{
+    font-size: 33px;
+}
+/* Footer */
+.footer {
+    text-align: center;
+}
+.footer a {
+    font-size: 20px;
+}
+@media(max-width: 1200px){
+    .section{
+        grid-template-columns: 1fr;
+    }
+}
