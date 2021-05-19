@@ -37,8 +37,9 @@ h1:only-of-type{
 }
 .img{
     background-image: url(images/IMG_6687.jpg);
-    background-size: 478px 429px;
+    background-size: 653px 480px;
     background-repeat: no-repeat;
+    background-position-x: center;
 }
 div:nth-child(2n){
     padding: 1em;
