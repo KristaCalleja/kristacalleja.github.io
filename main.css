@@ -13,17 +13,11 @@ a{
 body{
     box-sizing: border-box;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     background-color: var(--beige);
     color: var(--rich-black);
-}
-.wrapper{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 /* First Section */
 h1:only-of-type{
@@ -31,18 +25,21 @@ h1:only-of-type{
     line-height: 2em;
 }
 .section{
-    border: 1px gray dotted;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    overflow: hidden;
+    margin: 2.3em;
+    align-items: center;
 }
-.img{
-    background-image: url(images/IMG_6687.jpg);
-    background-size: 653px 480px;
-    background-repeat: no-repeat;
-    background-position-x: center;
+.section div{
+    padding:2em;
 }
-div:nth-child(2n){
-    padding: 1em;
+p:last-child{
+    line-height: 1.2em;
+}
+img{
+    height: 100%;
+    width: 440px;
+    border-radius: 9px;
 }
 /* Projects section */
 h2{
@@ -50,7 +47,6 @@ h2{
     text-align: center;
 }
 .main{
-    border: 1px gray dotted;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,25 +54,31 @@ h2{
 }
 .main a{
     border: 1px var(--bran-red) double;
-    background: ;
     max-width: 320px;
     align-items: center;
     text-align: center;
     margin: .7em;
     padding: 1em 2em;
 }
+a:hover{
+    background: var(--bran-red);
+    color: var(--cultured);
+    border: 1px var(--cultured) solid;
+}
 ion-icon{
     font-size: 33px;
 }
 /* Footer */
 .footer {
+    margin-top: 3em;
     text-align: center;
 }
 .footer a {
     font-size: 20px;
 }
-@media(max-width: 1200px){
+@media(max-width: 1134px){
     .section{
-        grid-template-columns: 1fr;
+        position: relative;
+        flex-direction: column;
     }
 }
