@@ -42,8 +42,8 @@ img:first-of-type:not(.controls img){
 .img img:nth-child(2n):not(.controls img){
     opacity: .9;
     margin: 2.5em 0 1.5em 2.5em;
-    width: 562px !important;
-    height: 445px !important;
+    width: 520px;
+    height: 520px;
     border-radius: 9px;
     box-shadow: -1px 2px 8px -6px #000001;
 }
@@ -160,8 +160,8 @@ ion-icon{
     }
     .img img:nth-child(2n):not(.controls img){
         margin: 1.5em;
-        width: 520px;
-        height: 520px;
+        width: 562px !important;
+        height: 445px !important;
     }
     .img img {
         height: 100%;
