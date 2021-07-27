@@ -19,10 +19,11 @@ body{
     justify-items: center;
 }
 .card{
-    border: 1px var(--cultured) solid;
+    border: 3px var(--cultured) solid;
     max-width: 411px;
     height: 650px;
     position: relative;
+    box-shadow: -9px 31px 13px -17px var(--laurel-green);
 }
 .text-box{
     display: block;
@@ -46,6 +47,8 @@ p:last-child{
     bottom: 0;
     left: 0;
     padding: 3.5em;
+    display: flex;
+    justify-content: space-between;
 }
 img{
     max-width: 411px;
@@ -63,6 +66,7 @@ img:hover{
     padding: .7em 1.5em;
     border-radius: 22px;
     top: 0;
+    letter-spacing: .03em;
 }
 a:hover{
     color: var(--bran-red);
