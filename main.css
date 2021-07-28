@@ -87,10 +87,6 @@ p:first-of-type{
     font-weight: 300;
     line-height: 1.5em;
 }
-.label{
-    font-size: 14px;
-    line-height: .4em;
-}
 h3:last-of-type{
     color: var(--army-green);
     font-weight: 500;
@@ -164,12 +160,5 @@ ion-icon{
     }
     .img img {
         height: 100%;
-    }
-    .label h3{
-        text-align: left;
-    }
-    .label{
-        display: flex;
-        gap: .5em;
     }
 }
