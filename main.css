@@ -11,23 +11,77 @@ body{
     margin: 0;
     background-color: var(--beige);
 }
+/* Basic typography rules */
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--rich-black);
     font-size: 3rem;
-    width: 80%;
     letter-spacing: .04em;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
 }
+p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 450;
+}
 a{
     text-decoration: none;
     text-transform: uppercase;
 }
+/* Buttons */
+.primary-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px var(--army-green) solid;
+    background-color: var(--army-green);
+    color: var(--beige);
+    letter-spacing: .2em;
+    padding: 1.5em .7em;
+    width: 40%;
+}
+.primary-btn:hover{
+    background-color: #6D800F;
+    border: 1px #6D800F solid;
+    color: var(--rich-black);
+    font-weight: 500;
+}
+.secondary-btn{
+    border: 1px var(--army-green) solid;
+    color: var(--rich-black);
+    font-size: .9rem;
+    letter-spacing: .2em;
+    padding: 1.1em 3em;
+}
+.secondary-btn:hover{
+    border: 1px var(--rich-black) solid;
+    color: var(--beige);
+    background-color: var(--rich-black);
+}
+/* Accessories */
+.primary-btn ion-icon{
+    transform: translateY(15px);
+    animation: top-to-bottom 1s linear infinite;
+}
+.horizontal-line{
+    border: none;
+    height: 1px;
+    background: var(--army-green);
+    width: 90%;
+}
+.burger div{
+    width: 28px;
+    height: 3px;
+    background-color: var(--rich-black);
+    margin: 5px;
+}
+/* Components */
 .wrapper{
     padding: 0 2em;
+    margin: auto;
 }
 nav{
     width: 100%;
@@ -37,30 +91,18 @@ nav{
     font-size: 2rem;
     padding: .6em 0;
 }
-nav ion-icon{
-    color: var(--rich-black);
-    padding: .7em;
-}
 nav img{
     height: 50px;
 }
-.desktop-menu{
+.desktop-links{
     display: none;
 }
 /* Home */
-.about-me{
-    border: 1px var(--army-green) solid;
-    background-color: var(--army-green);
-    color: var(--beige);
-    padding: 2em 3em;
-    letter-spacing: .2em;
-    font-weight: 400;
-    margin-bottom: 5em;
-    max-width: 150px;
-    display: flex;
-    justify-content: space-between;
-}
+
 /* Section-2 */
+.primary-btn{
+    margin-bottom: 4em;
+}
 .profile-img{
     width: 100%;
     height: 38vh;
@@ -68,68 +110,67 @@ nav img{
     background-repeat: no-repeat;
     background-size: 408px 257px;
 }
-.horizontal-line{
-    border: none;
-    height: 1px;
-    background: var(--army-green);
-    width: 90%;
-}
-.btn{
-    border: 1px var(--army-green) solid;
-    color: var(--rich-black);
-    font-size: .9rem;
-    letter-spacing: .2em;
-    padding: 1.1em 3em;
-}
 /* Last section */
-#contact-me{
-    padding: 2em 0;
-}
 #contact-me h2{
-    margin: auto;
+    padding: 1.85em .75em;
     text-align: center;
-    max-width: 200px;
+    margin: auto;
+    max-width: 225px;
 }
 #contact-me hr{
     display: none;
 }
 /* Footer */
 .footer{
-    padding: .7em;
     background-color: var(--rich-black);
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 1.9rem;
+    padding: .7em 0;
 }
-ion-icon, .goodreads{
-    margin: 0 .5em;
+.footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-icon{
+    padding: .6em;
     color: var(--beige);
 }
 .goodreads{
+    padding: .6em;
     filter: invert(100%) sepia(54%) saturate(1%) hue-rotate(1deg) brightness(110%) contrast(96%);
 }
-@media(min-width: 900px){
+@keyframes top-to-bottom{
+	0% { transform: translateY(0px);opacity: 1; }
+	100% { transform: translateY(15px); opacity: 0; }
+}
+@media(min-width: 1175px){
     .wrapper{
-        margin: auto;
         max-width: 1200px;
     }
     nav img{
         height: 80px;
     }
-    .desktop-menu{
+    .burger{
+        display: none;
+    }
+    .desktop-links{
         display: inline;
     }
-    .desktop-menu a{
+    .desktop-links a{
         color: var(--rich-black);
         font-size: 1.2rem;
+        padding: 1em .75em;
     }
-    .mobile-menu{
-        display: none;
+    .desktop-links a:hover{
+        background-color: var(--rich-black);
+        color: var(--beige);
     }
     .hero-text{
         background-color: var(--beige);
-        max-width: 38vw;
+        max-width: 560px;
         position: absolute;
-        top: 560px;
+        top: 676px;
         z-index: 2;
     }
     #about-me{
@@ -140,12 +181,15 @@ ion-icon, .goodreads{
     }
     #about-me div{
         width: 50%;
+        gap: 1em;
     }
     .profile-img{
         margin-top: 13em;
-        width: 100%;
         height: 60vh;
         background-size: 540px 350px;
+    }
+    .horizontal-line:nth-child(2n){
+        color: red;
     }
     #contact-me{
         padding: 3em 1.5em;
@@ -159,8 +203,7 @@ ion-icon, .goodreads{
         display: inline;
         width: 53%;
     }
-    .footer{
-        display: flex;
-        justify-content: flex-end;
+    .footer div{
+        justify-content: right;
     }
 }
