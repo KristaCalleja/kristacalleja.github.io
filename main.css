@@ -209,15 +209,23 @@ ion-icon{
     }
     .card{
         padding: 2.5em 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 2.5em;
         margin: 2em 0;
-        }
-    .card div img{
+    }
+    .card img{
         width: 50%;
     }
     .card:nth-of-type(even){
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
     }
+}
 }
