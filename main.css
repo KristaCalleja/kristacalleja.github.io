@@ -23,9 +23,9 @@ h2{
     font-size: 2rem;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     line-height: 1.5em;
-    font-weight: 450;
+    font-weight: 300;
 }
 a{
     text-decoration: none;
@@ -219,7 +219,7 @@ ion-icon{
         margin: 2em 0;
     }
     .card img{
-        width: 50%;
+        width: 100%;
     }
     .card:nth-of-type(even){
         -webkit-box-orient: horizontal;
@@ -227,5 +227,4 @@ ion-icon{
             -ms-flex-direction: row-reverse;
                 flex-direction: row-reverse;
     }
-}
 }
