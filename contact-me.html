@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <div class="horizontal-line" style="width: 100%;"></div>
-        <div class="card">
+        <div>
             <h2>Get in Touch</h2>
             <div>
                 <p>I’d love to hear about what you’re working on and how I could help. I’m a hard-working and positive
@@ -24,10 +24,17 @@
             </div>
         </div>
         <div class="horizontal-line" style="width: 100%;"></div>
-        <div class="card">
+        <div>
             <h2>Contact Me</h2>
             <div>
                 <form action="submit">
+                    <input type="text" required onfocus="watermark(this, event);" onblur="watermark(this, event);"
+                        placeholder="Name">
+                    <input type="text" required onfocus="watermark(this, event);" onblur="watermark(this, event);"
+                        placeholder="Email Address">
+                    <textarea type="text" required onfocus="watermark(this, event);" onblur="watermark(this, event);"
+                        placeholder="Message"></textarea>
+                    <button>Send</button>
                 </form>
             </div>
         </div>

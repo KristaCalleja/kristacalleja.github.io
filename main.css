@@ -142,7 +142,7 @@ ion-icon{
 }
 /* Portfolio */
 .card img{
-    width: 50%;
+    width: 100%;
 }
 @keyframes top-to-bottom{
 	0% { transform: translateY(0px);opacity: 1; }
