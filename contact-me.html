@@ -14,31 +14,38 @@
 
 <body>
     <div class="wrapper">
+        <nav id="nav-placeholder">
+        </nav>
         <div class="horizontal-line" style="width: 100%;"></div>
-        <div>
+        <div id="about-me">
             <h2>Get in Touch</h2>
             <div>
-                <p>I’d love to hear about what you’re working on and how I could help. I’m a hard-working and positive
-                    person who will always approach each task with a sense of purpose and attention to detail. Please do
-                    feel free to check out my online profiles below and get in touch using the form below.</p>
+                <p>I’d love to hear what you’re working on and how I could help. I’m a hard-working and positive
+                    person who will always approach each task with a sense of purpose and attention to detail. Please
+                    feel free to check out my online profiles, and get in touch using the form below.</p>
             </div>
         </div>
         <div class="horizontal-line" style="width: 100%;"></div>
-        <div>
+        <div id="about-me">
             <h2>Contact Me</h2>
             <div>
                 <form action="submit">
+                    Name
                     <input type="text" required onfocus="watermark(this, event);" onblur="watermark(this, event);"
-                        placeholder="Name">
+                        placeholder="Jane Qwerty">
+                    Email Address
                     <input type="text" required onfocus="watermark(this, event);" onblur="watermark(this, event);"
-                        placeholder="Email Address">
+                        placeholder="example@example.com">
+                    Message
                     <textarea type="text" required onfocus="watermark(this, event);" onblur="watermark(this, event);"
-                        placeholder="Message"></textarea>
-                    <button>Send</button>
+                        placeholder="How can I help?"
+                        style="height: 10vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;"></textarea>
+                    <input type="submit" value="Send Message" class="secondary-btn">
                 </form>
             </div>
         </div>
-
+        <footer id="footer-placeholder">
+        </footer>
     </div>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
