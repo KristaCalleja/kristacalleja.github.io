@@ -9,12 +9,24 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <nav id="nav-placeholder">
+        <nav>
+            <a href="https://kristacalleja.github.io">
+                <img src="logo.png" alt="Krista Calleja leaf logo">
+            </a>
+            <div class="desktop-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact-me.html">Contact me</a>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
         <div class="card">
             <img src="images/greatreader.png" alt="">
@@ -114,21 +126,32 @@
                 <hr class="horizontal-line" style="width: 60%;">
             </div>
         </div>
-        <footer id="footer-placeholder">
-        </footer>
+        <div class="footer">
+            <div>
+                <a href="mailto:krista.developer@gmail.com">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a href="https://github.com/KristaCalleja" target="_blank" rel="noreferrer" title="Github">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/kristacalleja/" target="_blank" rel="noreferrer" title="LinkedIn">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://twitter.com/krista_calleja" target="_blank" rel="noreferrer" title="Goodreads">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                </a><a href="https://instagram.com/ghajnejja" target="_blank" rel="noreferrer" title="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.goodreads.com/user/show/9676019-krista-calleja" class="goodreads" target="_blank"
+                    rel="noreferrer" title="Goodreads">
+                    <img src="images/goodreads-brands.svg" alt="Goodreads" style="height: 25px;">
+                </a>
+            </div>
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("assets/nav.html");
-        });
-    </script>
-    <script>
-        $(function () {
-            $("#footer-placeholder").load("assets/footer.html");
-        });
-    </script>
 </body>
 
 </html>
